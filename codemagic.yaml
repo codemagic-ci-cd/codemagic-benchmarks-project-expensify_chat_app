@@ -30,17 +30,6 @@ workflows:
                   -PversionName=1.0.$UPDATED_BUILD_NUMBER
         artifacts:
             - android/app/build/outputs/**/*.aab
-        publishing:
-          email:
-            recipients:
-              - user_1@example.com
-              - user_2@example.com
-            notify:
-              success: true     # To not receive a notification when a build succeeds
-              failure: false    # To not receive a notification when a build fails
-          google_play:
-            credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
-            track: alpha   # Any default or custom track that is not in ‘draft’ status
     react-native-ios:
         name: React Native iOS
         max_build_duration: 120
