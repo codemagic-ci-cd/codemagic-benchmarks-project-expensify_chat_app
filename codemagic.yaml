@@ -10,7 +10,7 @@ workflows:
             PACKAGE_NAME: "io.codemagic.sample.reactnative" # <-- Put your package name here e.g. com.domain.myapp
           node: 20.10.0
           npm: 10.2.3
-          java: 19
+          java: 17
         scripts:
             - name: Install npm dependencies
               script: |
