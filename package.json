@@ -7,7 +7,6 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "configure-mapbox": "scripts/setup-mapbox-sdk-walkthrough.sh",
     "setupNewDotWebForEmulators": "scripts/setup-newdot-web-emulators.sh",
     "startAndroidEmulator": "scripts/start-android.sh",
     "postinstall": "scripts/postInstall.sh",
@@ -111,7 +110,7 @@
     "jest-when": "^3.5.2",
     "lodash": "4.17.21",
     "lottie-react-native": "6.4.1",
-    "mapbox-gl": "^2.15.0",
+
     "onfido-sdk-ui": "14.15.0",
     "process": "^0.11.10",
     "prop-types": "^15.7.2",
@@ -221,7 +220,6 @@
     "@types/jest-when": "^3.5.2",
     "@types/js-yaml": "^4.0.5",
     "@types/lodash": "^4.14.195",
-    "@types/mapbox-gl": "^2.7.13",
     "@types/node": "^20.11.5",
     "@types/pusher-js": "^5.1.0",
     "@types/react": "18.2.45",
