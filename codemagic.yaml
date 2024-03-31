@@ -2,7 +2,7 @@ workflows:
     react-native-android:
         name: React Native Android
         max_build_duration: 120
-        instance_type: mac_pro
+        instance_type: mac_mini_m2
         environment:
           android_signing:
             - codemagic_keystore
@@ -11,7 +11,6 @@ workflows:
           node: 20.10.0
           npm: 10.2.3
           java: 19
-          xcode: 14.2
         scripts:
             - name: Install npm dependencies
               script: |
