@@ -5,16 +5,13 @@ workflows:
         instance_type: mac_mini_m2
         environment:
           android_signing:
-            - keystore_reference
-          groups:
-            - google_play # <-- (Includes GCLOUD_SERVICE_ACCOUNT_CREDENTIALS <-- Put your google-services.json)
+            - codemagic_keystore
           vars:
             PACKAGE_NAME: "io.codemagic.sample.reactnative" # <-- Put your package name here e.g. com.domain.myapp
-          node: v19.7.0
         scripts:
             - name: Install npm dependencies
               script: |
-                npm install
+                npm install --legacy-peer-deps
             - name: Set Android SDK location
               script: |
                 echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"            
