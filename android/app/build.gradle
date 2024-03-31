@@ -61,7 +61,6 @@ react {
 project.ext.envConfigFiles = [
     productionDebug: ".env.production",
     productionRelease: ".env.production",
-    adhocRelease: ".env.adhoc",
     developmentRelease: ".env",
     developmentDebug: ".env",
     e2eRelease: "tests/e2e/.env.e2e",
