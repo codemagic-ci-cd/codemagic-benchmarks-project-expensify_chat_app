@@ -76,7 +76,7 @@ workflows:
             #     $PLIST_BUDDY -c "Add :ITSAppUsesNonExemptEncryption bool false" $PLIST
             - name: Set up code signing settings on Xcode project
               script: |
-                xcode-project use-profiles --warn-only
+                xcode-project use-profiles --project=ios/NewExpensify.xcodeproj--warn-only
             # - name: Increment build number
             #   script: |
             #     cd $CM_BUILD_DIR/ios
