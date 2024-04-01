@@ -11,6 +11,9 @@ workflows:
           node: 20.10.0
           npm: 10.2.3
           java: 17
+        cache:
+          cache_paths:
+            - $CM_BUILD_DIR/node_modules
         scripts:
             - name: Install npm dependencies
               script: |
