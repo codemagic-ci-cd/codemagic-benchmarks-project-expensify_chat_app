@@ -54,7 +54,7 @@ workflows:
             APP_ID: 1555555551 # <-- Put the app id number here. This is found in App Store Connect > App > General > App Information
           node: 20.10.0
           npm: 10.2.3
-          xcode: 15.2
+          xcode: 15.3
           # xcode: latest
           # cocoapods: default
         cache:
