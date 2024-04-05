@@ -54,7 +54,7 @@ workflows:
           node: 20.10.0
           npm: 10.2.3
           xcode: 15.3
-          cocoapods: 1.15.0
+  
           # xcode: latest
           # cocoapods: default
         cache:
