@@ -18,7 +18,8 @@ workflows:
         scripts:
             - name: Install npm dependencies
               script: |
-                npm install --legacy-peer-deps
+                 yarn install
+     # npm install --legacy-peer-deps
             - name: Set Android SDK location
               script: |
                 echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties"            
