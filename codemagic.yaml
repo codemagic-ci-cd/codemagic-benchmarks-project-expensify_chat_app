@@ -8,6 +8,8 @@ workflows:
             - codemagic_keystore
           vars:
             PACKAGE_NAME: "io.codemagic.sample.reactnative" # <-- Put your package name here e.g. com.domain.myapp
+          node: 20.10.0
+          npm: 10.2.3
           java: 17
           xcode: 15.2
         cache:
