@@ -18,6 +18,7 @@ workflows:
         scripts:
             - name: Install npm dependencies
               script: |
+                npm config set registry http://registry.npmjs.org/
                 npm install --legacy-peer-deps
             - name: Set Android SDK location
               script: |
