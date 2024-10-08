@@ -20,10 +20,10 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://dl.bintray.com/android/android-tools' }
+        // maven { url 'https://dl.bintray.com/android/android-tools' }
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:7.6")
+        classpath("com.android.tools.build:gradle:2.3.3")
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("com.google.gms:google-services:4.3.4")
         classpath("com.google.firebase:firebase-crashlytics-gradle:2.7.1")
