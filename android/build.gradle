@@ -21,6 +21,8 @@ buildscript {
         google()
         mavenCentral()
         // maven { url 'https://dl.bintray.com/android/android-tools' }
+        maven { url "https://dl.bintray.com/android/android-tools/"  }
+        jcenter()
     }
     dependencies {
         classpath("com.android.tools.build:gradle")
