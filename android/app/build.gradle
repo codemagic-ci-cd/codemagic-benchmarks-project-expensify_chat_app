@@ -178,7 +178,7 @@ android {
             setIgnore(true)
         }
     }
-}
+
 
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
