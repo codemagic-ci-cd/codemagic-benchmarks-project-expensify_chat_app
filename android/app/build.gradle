@@ -147,11 +147,11 @@ android {
     //           }
     //       }
     //   }
-    buildTypes {
-        debug {
-            signingConfig signingConfigs.release
-        }
-
+    // buildTypes {
+    //     debug {
+    //         signingConfig signingConfigs.release
+    //     }
+    // }
     //     release {
     //         productFlavors.production.signingConfig signingConfigs.release
     //         shrinkResources enableProguardInReleaseBuilds
@@ -170,7 +170,7 @@ android {
     //         productFlavors.e2e.signingConfig signingConfigs.debug
     //         productFlavors.e2edelta.signingConfig signingConfigs.debug
     //     }
-    }
+    
 
     // since we don't need variants adhocDebug and e2eDebug, we can force gradle to ignore them
     variantFilter { variant ->
