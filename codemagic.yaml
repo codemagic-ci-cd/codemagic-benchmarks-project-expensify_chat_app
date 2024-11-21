@@ -12,9 +12,9 @@ workflows:
           npm: 10.2.3
           java: 17
           xcode: 15.4
-        cache:
-          cache_paths:
-            - $CM_BUILD_DIR/node_modules
+        # cache:
+        #   cache_paths:
+        #     - $CM_BUILD_DIR/node_modules
         scripts:
             - name: Install npm dependencies
               script: |
